@@ -139,6 +139,10 @@ body {
 }
 .page__option {
 }
+.page__blog {
+}
+.page__sign {
+}
 /*-----------------Slider-----------------------------------*/
 .slider {
 	display: flex;
@@ -434,12 +438,21 @@ body {
 	text-align: center;
 	min-height: 50px;
 	background-color: #023047;
+	border: 1px solid #023047;
 	color: #fff;
 	font-weight: 600;
 	line-height: 118%;
 	text-transform: uppercase;
 	padding: 5px 25px;
 }
+
+.main-block__button:hover {
+	background-color: #fff;
+	border: 1px solid #023047;
+	color: #023047;
+	transition: all 0.5s ease 0s;
+}
+
 .main-block__image {
 	position: absolute;
 	width: 100%;
@@ -556,6 +569,13 @@ body {
 	border: 1px solid #000000
 }
 
+.column-collection__button:hover {
+	background-color: #023047;;
+	border: 1px solid #023047;
+	color: #fff;
+	transition: all 0.5s ease 0s;
+}
+
 .column-collection__image {
 	}
 
@@ -616,6 +636,13 @@ body {
 	color: #000000;
 	background-color: #fff;
 	border: 1px solid #000000
+}
+
+.item-column__button:hover {
+	background-color: #023047;;
+	border: 1px solid #023047;
+	color: #fff;
+	transition: all 0.5s ease 0s;
 }
 
 @media (max-width: 1200px) {
@@ -1165,7 +1192,15 @@ body {
 	justify-content: center;
 	padding: 15px 25px;
 	background-color: #fff;
+	border: 1px solid #fff;
 	color: inherit;
+}
+
+.title-block__shop-button:hover {
+	background-color: rgb(230, 228, 228);
+	border: 1px solid #787878;
+	color: #023047;
+	transition: all 0.5s ease 0s;
 }
 
 .shop__image {
@@ -1213,6 +1248,7 @@ body {
 .item-option:hover .item-option__body  {
 	background-color: #fff;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	transition: all 0.5s ease 0s;	
 }
 
 .item-option__body img {
@@ -1256,5 +1292,284 @@ body {
 	}
 	.item-option {
 		flex: 1 1 100%;
+	}
+}
+
+/*-----------------Blog--------------------*/
+
+.blog {
+	padding: 84px 0 125px 0;
+}
+.blog__container {
+}
+
+.blog__title-block {
+	margin: 0 auto 46px auto;
+}
+.blog__title-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	max-width: 570px;
+	
+}
+
+.title-block__blog-title {
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 143%;
+	margin: 0 0 17px 0;
+}
+.title-block__blog-subtitle {
+	line-height: 143%;
+}
+.blog__row {
+	display: flex;
+	margin: 0 -15px
+}
+
+
+.blog__column {
+	padding: 0 15px;
+	min-height: 100%;
+	
+}
+.blog__column--left {
+	flex: 0 1 58.3%;	
+}
+.blog__column--right {
+	flex: 0 1 42%;
+	display: flex;
+	flex-direction: column;
+}
+
+.blog__column--right .card-blog {
+	padding: 0 0 13px 0;
+}
+
+/* .blog__column--right .card-blog:last-child {
+	padding: 0 0 18px 0;
+} */
+
+.blog__column--right>*:not(:last-child) {
+	margin: 0 0 30px 0;
+}
+
+.card-blog {
+	background-color: #f5f5f5;	
+}
+.card-blog__image {
+}
+
+.card-blog__image--left {
+	position: relative;
+	padding-bottom: 59.701%;
+	margin: 0 0 15px 0;
+
+}
+.card-blog__cover-left {
+	padding: 0 0 32px 19px;
+}
+.card-blog__body {
+	display: flex;
+	padding: 0 22px 0 12px;
+	max-height: 100%;
+}
+.card-blog__cover-info {
+	
+}
+
+.card-blog__date {
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 140%;
+	text-transform: uppercase;
+	margin: 0 0 8px 0;
+}
+
+
+.card-blog__title {
+}
+
+.card-blog__image--right {
+	position: relative;
+	padding-bottom: 50.851%;
+	margin: 0 0 11px 0;
+
+}
+
+
+.card-blog__title--left {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 141.6%;
+	text-decoration-line: underline;
+	margin: 0 0 13px 0;
+}
+.card-blog__title--right {
+	font-weight: 500;
+	line-height: 137%;
+	max-width: 265px;
+	font-size: 14px;
+	margin-right: 34px;
+
+}
+.card-blog__text {
+	line-height: 143%;
+	color: #666666;
+	margin: 0 0 21px 0;
+	padding: 0 22px 0 0;
+}
+.card-blog__button {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	max-height: 50px;
+	padding: 15px 30px;
+	background-color: #023047;
+	border: 1px solid #023047;
+	font-weight: 500;	
+	line-height: 143%;
+	color: #FFFFFF;
+}
+
+.card-blog__button:hover {
+	background-color: #fff;
+	border: 1px solid #023047;
+	color: #023047;
+	transition: all 0.5s ease 0s;	
+
+}
+
+@media (max-width: 1186px) {
+	.blog__row {
+		flex-wrap: wrap;
+	}
+	.blog__column {
+		padding: 0;		
+  }
+	.blog__column--left {
+		flex: 1 1 100%;
+	}
+	.blog__column--right {
+		flex: 1 1 100%;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.blog__column--right>*:not(:last-child) {
+		margin: 0 20px 0 0;
+  }
+  .blog__column--left .card-blog {
+	margin: 0 0 20px 0;
+  }
+  .card-blog__title--right {	
+	font-size: 15px;	
+}
+.card-blog__text {
+	font-size: 15px;	
+}
+}
+
+@media (max-width: 779px) {
+	.blog {
+		padding: 40px 0 50px 0;
+}
+	.blog__column--right {
+		flex-wrap: wrap;
+		justify-content: center;		
+	}
+	.blog__column--right>*:not(:last-child) {
+		margin: 0 0 20px 0;
+}
+.blog__column--right .card-blog {
+	flex: 1 1 100%;
+}
+.card-blog__body {
+	justify-content: space-between;
+}
+.card-blog__title--right {	
+	max-width: 100%;	
+}
+.card-blog__title--right {	
+	font-size: 14px;	
+}
+}
+/*---------------Sign-------------------*/
+
+.sign {
+	color: #fff;
+	padding: 92px 0 100px 0;	
+	position: relative;
+}
+.sign__container {
+	
+}
+
+.sign__title {
+}
+.tile-sign {
+	position: relative;
+	z-index: 5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 0 14px 0;
+}
+.title-sign__title {
+	font-weight: 500;
+	font-size: 143%;
+	line-height: 43px;
+	margin: 0 0 6px 0;
+}
+.title-sign__subtitle {
+	font-size: 14px;
+	line-height: 143%;	
+	max-width: 450px;
+	text-align: center;
+}
+.sign__form {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	z-index: 5;
+}
+.sign__input {
+	background-color: #fff;
+	min-height: 50px;
+	min-width: 443px;
+	padding: 15px 0 15px 16px;
+	color: #999999;
+	line-height: 143%;
+}
+.sign__button {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: #023047;
+	color: inherit;
+	min-height: 50px;
+	padding: 15px 17px 15px 16px;
+	font-weight: 600;
+	line-height: 143%;
+}
+.sign__image {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+
+
+@media (max-width: 600px) {
+	.sign__input {		
+		min-width: 50%;		
 	}
 }
