@@ -169,7 +169,7 @@ body {
 	width: 14px;
 	height: 14px;
 	border: 0;
-	background-image: url("/img/mainblock/round-active.svg");
+	background-image: url("../img/mainblock/round-active.svg");
 }
 .slider__control3 {
 }
@@ -281,7 +281,6 @@ body {
 } 
 
 .header__icon-list {
-	/* flex: 0 1 8.851%; */
 	display: flex;
 }
 .header__icon-item {
@@ -378,7 +377,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	content: url("/img/mainblock/arrow-left.svg");
+	content: url("../img/mainblock/arrow-left.svg");
 	position: absolute;
 	width: 40px;
 	height: 40px;
@@ -394,7 +393,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	content: url("/img/mainblock/arrow-right.svg");
+	content: url("../img/mainblock/arrow-right.svg");
 	position: absolute;
 	width: 40px;
 	height: 40px;
@@ -404,8 +403,7 @@ body {
 	z-index: 4;	
 	background-color: #023047;
 	padding-top: 2px;
-	cursor: pointer;
-	
+	cursor: pointer;	
 }
 
 .main-block__body {
@@ -795,7 +793,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	content: url("/img/mainblock/arrow-left.svg");
+	content: url("../img/mainblock/arrow-left.svg");
 	position: absolute;
 	width: 40px;
 	height: 40px;
@@ -811,7 +809,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	content: url("/img/mainblock/arrow-right.svg");
+	content: url("../img/mainblock/arrow-right.svg");
 	position: absolute;
 	width: 40px;
 	height: 40px;
@@ -1002,7 +1000,6 @@ body {
 	.item-selling__activity-btn {
 		right: 18px;
 	}
-	
 }
 
 /*---------------Delivery------------------*/
@@ -1270,7 +1267,7 @@ body {
 }
 
 @media (max-width: 840px) {
-	.option__row {	
+	.option__row {
 	flex-wrap: wrap;
 	justify-content: center;
 	}
@@ -1351,10 +1348,6 @@ body {
 	padding: 0 0 13px 0;
 }
 
-/* .blog__column--right .card-blog:last-child {
-	padding: 0 0 18px 0;
-} */
-
 .blog__column--right>*:not(:last-child) {
 	margin: 0 0 30px 0;
 }
@@ -1390,7 +1383,6 @@ body {
 	text-transform: uppercase;
 	margin: 0 0 8px 0;
 }
-
 
 .card-blog__title {
 }
@@ -1442,8 +1434,7 @@ body {
 	background-color: #fff;
 	border: 1px solid #023047;
 	color: #023047;
-	transition: all 0.5s ease 0s;	
-
+	transition: all 0.5s ease 0s;
 }
 
 @media (max-width: 1186px) {
@@ -1567,7 +1558,6 @@ body {
 	left: 0;
 	object-fit: cover;
 }
-
 
 @media (max-width: 600px) {
 	.sign {		
@@ -1795,7 +1785,6 @@ body {
 }
 }
 
-
 @media (max-width: 479px) {
 	.row__item:first-child {
 		padding-right: 10px;
@@ -1815,6 +1804,4 @@ body {
 	.row__item:last-child {
 		flex: 1 1 100%;
 	}
-
-	
 }
