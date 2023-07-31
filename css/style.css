@@ -195,9 +195,7 @@ body {
 }
 
 /*----------------------header-------------------------------*/
-.header {
-	
-	
+.header {	
 }
 .header__container {
 	display: flex;	
@@ -208,11 +206,8 @@ body {
 .header__menu {
 	max-width: 335px;
 	margin: 0 113px 0 0;
-	/* flex: 0 1 28.51%; */
 }
 
-.menu-header {
-}
 .menu-header__list {
 	display: flex;	
 }
@@ -224,14 +219,12 @@ body {
 	line-height: 146%;
 	color: inherit;
 }
-.heder__logo {
-	/* flex: 0 0 11.06%; */
+.header__logo {	
 	display: flex;
 	align-items: flex-end;
 	margin: 0 130px 0 0;
 }
-.header__form {
-	/* flex: 0 1 24.51%; */
+.header__form {	
 	display: flex;
 	align-items: center;
 	margin: 0 79px 0 0;
@@ -303,9 +296,8 @@ body {
 	}
 	.header__menu {
 		order: 2;
-		flex: 0 1 50%;
-		margin: 0;
-		margin-right: auto;
+		flex: 0 1 50%;	
+		margin: 0 auto 0 0;
 		margin-bottom: 30px;
 		min-width: 330px;
 		justify-content: space-between;
@@ -317,8 +309,7 @@ body {
 		font-size: 18px;
 	}
 
-	.heder__logo {
-		order: -1;
+	.header__logo {
 		margin-bottom: 30px;
 	} 
 	.header__form {
@@ -335,31 +326,68 @@ body {
 	}	
 }
 
+@media (max-width: 937px) {
+	.header__menu {
+		margin: 0 0 0 auto;
+	}
+	.menu-header__list {
+		justify-content: flex-end;
+  }
+  .header__icon-list {
+	margin: 0 0 0 auto;
+}
+.header__input {
+	font-size: 15px;
+}
+.header__form-category {
+	font-size: 15px;
+}
+  .header__form-button {
+	min-height: 54px;
+	min-width: 54px;
+	margin-right: 0;
+	border-bottom: unset;
+}
+
+}
+
 @media (max-width: 800px) {
 	.header__form {
 		flex: 1 1 50%;
 	}
-	.heder__logo {
+	.header__logo {
 		flex: 1 1 20%;
 	}
 	.header__input {
 		max-width: 50%;
 	}	
+	.header__form {
+		margin: 0;
+		max-width: 360px;
+	}
 }
 
-@media (max-width: 565px) {
+@media (max-width: 620px) {
+	.header__container>*:not(:last-child) {
+		margin: 0 0 30px 0;
+  }
+	.header__logo {
+		flex: 1 1 50%;
+		
+		order: 1;
+	}
+	.header__menu {
+		order: 3;
+  }
+  .menu-header__list {
+	justify-content: flex-start;	
+	}
 	.header__icon-list {
-		order: 4;
+		order: 2;
 	}
-	.header__form {
-		margin-bottom: 45px;
-	}
-	.menu-header__item:not(:last-child) {
-		margin: 0 20px 0 0;
-	}
-	.header__input {
-		max-width: 50%;
-	}
+	.header__container {
+		align-items: start;
+  }
 }
 
 
